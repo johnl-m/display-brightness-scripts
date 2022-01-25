@@ -1,10 +1,10 @@
 # display-brightness-scripts
-Bash scripts for increasing and decreasing display brightness, intended for use with [Solaar](https://pwr-solaar.github.io/Solaar/) or any other hotkey mapping tool on Linux.
+This repository contains Bash scripts for increasing and decreasing display brightness, intended for use with [Solaar](https://pwr-solaar.github.io/Solaar/) or any other hotkey mapping tool on Linux.
 
 ### Why? 
 On a Mac, you can use [MonitorControl](https://github.com/MonitorControl/MonitorControl) to adjust the brightness of your display using the keyboard. 
 I wasn't able to find a batteries-included tool for Linux, but most of the hard work to enable a similar solution was already done by contributors to Solaar. 
-The scripts I've added to this repo, while a bit clunky, were the last thing I needed to complete to get similar functionality to MonitorControl on Linux.
+The scripts I wrote in this repo, while a bit clunky, were the last thing I needed to get similar functionality to MonitorControl on Linux.
 
 ### Usage
 1. Clone the repository

@@ -10,8 +10,8 @@ if [[ $vcpOutput =~ $regex ]]; then
     newBrightness=$((previousBrightness - STEP))
     echo "New brightness is $newBrightness"
     if [ "$newBrightness" -ge 0 ]; then
-        ddcutil setvcp $BRIGHTNESS_CODE $newBrightness --display 1
-        ddcutil setvcp $BRIGHTNESS_CODE $newBrightness --display 2 # add and remove lines for your displays as necessary
+        ddcutil setvcp $BRIGHTNESS_CODE $newBrightness --display 1 --sleep-multiplier .1 --noverify # sleep multiplier may need to be increased, ie, to 1, depending on your display
+        ddcutil setvcp $BRIGHTNESS_CODE $newBrightness --display 2 --sleep-multiplier .1 --noverify # add and remove lines for your displays as necessary
     else
         echo "Brightness is already at the minimum"
         exit 0
